@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
-<meta charset = "UTF-8">
+<meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<div class="row">
-		<header>
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#aboutme">About Me</a></li>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#workexperience">Work Experience</a></li>
-				<li><a href="#">Contact Me</a></li>
-			</ul>
-		</header>
+		<div id="navbar">
+			<a href="#contactme" id = "contactmebtn">Contact Me</a>
+			<a href="#workexperience" id = "workexperiencebtn">Work Experience</a>
+			<a href="#education" id = "educationbtn">Education</a>
+			<a href="#home" id = "homebtn">Home</a>
+		</div>
 	</div>
 	<div class = "row">
 		<div class = "column">
@@ -19,10 +16,8 @@
 				<title>Tyler Dickard's Personal Webpage</title>
 				
 				
-				<section id = "home">
+				<section id = "home" class = "content">
 					<h1>Hello and Welcome To Tyler Dickards Resume/Portfolio</h1>
-				</section>
-				<section id = "aboutme">
 					<h1>About Me:</h1>
 					<p>Hello my name is Tyler Dickard and I am currently a Junior Software Engineering Major <br>
 						At Bowling Green State University. On Campus I am involved with the Falcon Marching Band <br>
@@ -30,7 +25,7 @@
 						Ever since I was in middle school I have been facinated with developing software and just tinkering <br>
 					    with computers, so I feel as if this career path is right for me</p>
 				</section>
-				<section id = "education">
+				<section id = "education" class = "content">
 					<h1>Education</h1>
 					<ul id = "mainList">
 						<li id = "big">Bowling Green State University</li>
@@ -39,7 +34,7 @@
 						<li id = "small">3.48 GPA | Bowden Thompson Working Families Scholar</li>
 					</ul>
 				</section>
-				<section id = "workexperience">
+				<section id = "workexperience" class = "content" style = "padding-top: 100px;">
 					<h1>Work Experience</h1>
 					<ul id = "mainList">
 						<li id = "big">Meijer</li>
@@ -65,9 +60,25 @@
 						</li>
 					</ul>
 				</section>
+				<section id = "contactme" class = "content">
+
+				</section>
 			</body>
 		</div>
 	</div>
+	<script>
+		window.onscroll = function() {myFunction()};
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+		function myFunction() {
+  			if (window.pageYOffset >= sticky) {
+    			navbar.classList.add("sticky")
+  			} else {
+    			navbar.classList.remove("sticky");
+  			}
+		}
+
+	</script>
 	<footer>
 		<h5>Developed by Tyler Dickard, 2022</h5>
 	</footer>

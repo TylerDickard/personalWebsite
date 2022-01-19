@@ -5,26 +5,29 @@
 .column {
   flex : 100%;
 }
-header ul {
-  list-style-type: none;
-  margin : 0;
-  padding : 0;
+#navbar {
   overflow: hidden;
-  width : 100%;
-  background-color: black;
+  background-color: #333;
+  width: 100%;
 }
-header ul li {
-  float:  right;
-}
-ul li a {
-  display : block;
-  padding: 14px 16px;
-  color : white;
-  text-decoration: none;
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
-ul li a:hover {
-  background-color: grey;
+.content {
+  padding: 30px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 150px;
 }
 header {
   width: 100%;
@@ -37,6 +40,9 @@ footer {
   width:  100%;
   background-color: grey;
   padding : 5px 5px;
+}
+section {
+  height: 100vh;
 }
 section ul#mainList {
   list-style-type: none; 
