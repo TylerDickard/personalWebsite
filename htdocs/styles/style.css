@@ -7,6 +7,7 @@
 }
 .column2 {
 	flex : 20%;
+	margin : 2%
 }
 /*Styling for the navigation bar*/
 #navbar {
@@ -85,6 +86,15 @@ section#contactme {
 section#projects {
 	padding-top: 5%;
 }
+/*Styling for project box*/
+.box {
+	width:  75%;
+	height : 75%;
+	background-color: grey;
+	border-radius: 25px;
+	z-index: 0;
+	
+}
 /*Temp Styling for the design of the webpage*/
 h1.home {
 	font-size: 350%;
@@ -96,4 +106,7 @@ h1.abtme {
 section#home p {
 	font-size: 300%;
 	padding-top: 0;
+}
+div.column2 a {
+	font-style: normal;
 }
