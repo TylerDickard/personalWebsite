@@ -5,7 +5,7 @@
 .column {
   flex : 100%;
 }
-ul {
+header ul {
   list-style-type: none;
   margin : 0;
   padding : 0;
@@ -13,7 +13,7 @@ ul {
   width : 100%;
   background-color: black;
 }
-ul li {
+header ul li {
   float:  right;
 }
 ul li a {
@@ -37,4 +37,17 @@ footer {
   width:  100%;
   background-color: grey;
   padding : 5px 5px;
+}
+section#education ul {
+  list-style-type: none; 
+  padding-left: 0px;
+}
+section#education ul li#big {
+  font-size: 20px;
+}
+section#education ul li#med {
+  font-size : 16px;
+}
+section#education ul li#small {
+  font-size:  12px;
 }
