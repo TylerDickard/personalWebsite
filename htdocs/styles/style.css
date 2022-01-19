@@ -38,16 +38,19 @@ footer {
   background-color: grey;
   padding : 5px 5px;
 }
-section#education ul {
+section ul#mainList {
   list-style-type: none; 
   padding-left: 0px;
 }
-section#education ul li#big {
+section ul li#big {
   font-size: 20px;
 }
-section#education ul li#med {
+section ul li#med {
   font-size : 16px;
 }
-section#education ul li#small {
-  font-size:  12px;
+section ul li#small {
+  font-size:  14px;
+}
+ul#basic {
+  list-style-type: square;
 }
