@@ -9,36 +9,32 @@
 	flex : 20%;
 	margin : 2%
 }
+
+
 /*Styling for the navigation bar*/
 #navbar {
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #333;
+  position: fixed; 
+  top: 0; 
+  left : -1px;
   width: 100%;
+  z-index: 4;
 }
 #navbar a {
   float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 1%;
-
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 100%;
-}
-.navbar-right {
-	float : right;
 }
 .content {
   padding: 30px;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.sticky + .content {
-  padding-top: 150px;
-}
+
+
+
 /*general styling*/
 header {
   width: 100%;
@@ -56,6 +52,8 @@ footer {
 section {
   height: 100vh;
 }
+
+
 /*Styling for unsorted lists*/
 section ul#mainList {
   list-style-type: none; 
@@ -73,19 +71,8 @@ section ul li#small {
 ul#basic {
   list-style-type: square;
 }
-/*Styling for the individual sections*/
-section#education {
-	padding-top: 6%;
-}
-section#workexperience {
-	padding-top: 5%;
-}
-section#contactme {
-	padding-top: 5%;
-}
-section#projects {
-	padding-top: 5%;
-}
+
+
 /*Styling for project box*/
 .box {
 	width:  75%;
@@ -95,6 +82,8 @@ section#projects {
 	z-index: 0;
 	
 }
+
+
 /*Temp Styling for the design of the webpage*/
 h1.home {
 	font-size: 350%;
@@ -108,5 +97,6 @@ section#home p {
 	padding-top: 0;
 }
 div.column2 a {
-	font-style: normal;
+	text-decoration: none;
+  color : black;
 }
