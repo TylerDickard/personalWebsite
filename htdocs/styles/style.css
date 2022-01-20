@@ -1,10 +1,15 @@
+/*Styling for the flexbox for the webpage*/
 .row {
   display : flex;
 }
-
 .column {
   flex : 100%;
 }
+.column2 {
+	flex : 20%;
+	margin : 2%
+}
+/*Styling for the navigation bar*/
 #navbar {
   overflow: hidden;
   background-color: #333;
@@ -15,8 +20,13 @@
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px;
+  padding: 1%;
+
   text-decoration: none;
+  font-size: 100%;
+}
+.navbar-right {
+	float : right;
 }
 .content {
   padding: 30px;
@@ -29,14 +39,13 @@
 .sticky + .content {
   padding-top: 150px;
 }
-.active {
-  background-color: blue;
-}
+/*general styling*/
 header {
   width: 100%;
 }
 html {
   background-color: lightgrey;
+  max-width: 99%;
 }
 footer {
   text-align: center;
@@ -47,6 +56,7 @@ footer {
 section {
   height: 100vh;
 }
+/*Styling for unsorted lists*/
 section ul#mainList {
   list-style-type: none; 
   padding-left: 0px;
@@ -62,4 +72,41 @@ section ul li#small {
 }
 ul#basic {
   list-style-type: square;
+}
+/*Styling for the individual sections*/
+section#education {
+	padding-top: 6%;
+}
+section#workexperience {
+	padding-top: 5%;
+}
+section#contactme {
+	padding-top: 5%;
+}
+section#projects {
+	padding-top: 5%;
+}
+/*Styling for project box*/
+.box {
+	width:  75%;
+	height : 75%;
+	background-color: grey;
+	border-radius: 25px;
+	z-index: 0;
+	
+}
+/*Temp Styling for the design of the webpage*/
+h1.home {
+	font-size: 350%;
+}
+h1.abtme {
+	font-size: 320%;
+	margin-bottom: 0;
+}
+section#home p {
+	font-size: 300%;
+	padding-top: 0;
+}
+div.column2 a {
+	font-style: normal;
 }
