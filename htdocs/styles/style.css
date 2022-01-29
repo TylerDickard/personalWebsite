@@ -54,6 +54,22 @@ section {
 }
 
 
+/*Styling for Img on home scren*/
+img#homeImg {
+    transition: transform .2s;
+    float: right; 
+    padding: 0px;
+    filter : drop-shadow(16px 16px 10px darkgray);
+    max-width: 75%;
+    max-height: 75%;
+}
+@media screen and (min-width:  1000px) {
+  img#homeImg:hover {
+    transform: scale(1.2);
+  }
+}
+
+
 /*Styling for unsorted lists*/
 section ul#mainList {
   list-style-type: none; 
@@ -83,8 +99,10 @@ ul#basic {
 	z-index: 0;
   filter : drop-shadow(16px 16px 10px darkgray);
 }
-.box:hover {
-  transform: scale(1.2);
+@media screen and (min-width:  1000px) {
+  .box:hover {
+    transform: scale(1.2);
+  }
 }
 
 
