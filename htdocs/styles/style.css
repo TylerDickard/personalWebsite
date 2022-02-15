@@ -29,6 +29,9 @@
   padding: 14px 16px;
   text-decoration: none;
 }
+#navbar a:hover {
+  background-color: darkgray;
+}
 .content {
   padding: 30px;
 }
