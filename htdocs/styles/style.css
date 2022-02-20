@@ -47,6 +47,7 @@ header {
 html {
   background-color: lightgrey;
   max-width: 99%;
+  scroll-behavior: smooth;
 }
 footer {
   text-align: center;
