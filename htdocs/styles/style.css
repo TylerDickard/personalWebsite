@@ -46,6 +46,7 @@ header {
 }
 html {
   background-color: lightgrey;
+  font-family: "Monaco", "Monospace", "serif";
   max-width: 99%;
   scroll-behavior: smooth;
 }
@@ -87,8 +88,12 @@ section ul li#big {
 section ul li#med {
   font-size : 300%;
 }
-section ul li#small {
+section ul li#small2 {
   font-size:  260%;
+  font-style: italic;
+}
+section ul li#small {
+  font-size: 260%;
 }
 ul#basic {
   list-style-type: square;
