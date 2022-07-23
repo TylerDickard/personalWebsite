@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href="styles/style.css">
+	<link rel = "shortcut icon" type="image/jpg" href="pictures/D.png">
+	<div class="row">
+		<div id="navbar">
+			<a href="#contactme" id = "contactmebtn">Contact Me</a>
+			<a href="#projects" id = "projectsbtn">Projects</a>
+			<a href="#workexperience" id = "workexperiencebtn">Work Experience</a>
+			<a href="#education" id = "educationbtn">Education</a>
+			<a href="#home" id = "homebtn">Home</a>
+		</div>
+	</div>
+	<div class = "row">
+		<div class = "column">
+			<body>
+				<title>Tyler Dickard's Personal Webpage</title>
+				<section id = "home" class = "content">
+					<h1 class = "style1">Hello and Welcome To Tyler Dickards Resume</h1>
+					<h1 class = "style2">About Me:</h1>
+					<img src="pictures/profile.jfif" alt="picture of me" id = "homeImg">
+					<p>Hello my name is Tyler Dickard and I am currently a Senior at Bowling Green State University
+					with a major in Software Engineering and a minor in General Science. Outside of my studies I am a member
+					of the Bowden-Thompson Working Families Scholarship Program, which helps me give back to my community by doing
+					community service. I am also the Tenor Drum Section Leader for the BGSU Falcon Marching Band. I have experience working
+					with front end development and backend development from my studies. I also follow the Agile Methodology for development.</p>
+				</section>
+				<section id = "education" class = "content">
+					<h1 class = "style1">Education</h1>
+					<ul id = "mainList">
+						<li id = "bigBold">Bowling Green State University</li>
+						<li id = "med">Bachelors of Science in Software Engineering</li>
+						<li id = "small">Minor in General Science</li>
+						<li id = "smallItalic">Aug. 2019 - April 2023</li>
+						<li id = "smallItalic">3.35 GPA | Bowden Thompson Working Families Scholar</li>
+					</ul>
+				</section>
+				<section id = "workexperience" class = "content">
+					<h1 class = "style1">Work Experience</h1>
+					<ul id = "mainList">
+						<li id = "bigBold"><b>Meijer</b></li>
+						<li id = "med">Service Team Member</li>
+						<li id = "small">
+							<ul id = "basic">
+								<li>Provided quality assistance to customers in a fast paced enviroment</li>
+								<li>Aided customers in checking-out in a timely mannor</li>
+								<li>Calculated exact change for a transaction in a short period of time</li>
+							</ul>
+						</li>
+					</ul>
+					<ul id = "mainList">
+						<li id = "bigBold"><b>Willoughby-Eastlake City Schools</b></li>
+						<li id = "med">IT Assistant</li>
+						<li id = "small">
+							<ul id = "basic">
+								<li>Worked with a team of IT Professionals on diagnosing hardware malfunctions and fixing hardware malfunctions.</li>
+								<li>Aided in the deployment of Chromebooks during the COVID-19 Pandemic to students.</li>
+								<li>Worked across several schools within the district to get every computer and projector in the district inventory software.</li>
+								<li>Upgraded older computers with newer machines, and repurposing older machines for less demanding uses.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section id = "projects" class = "content">
+					<h1 class = "style1">My Current Projects</h1>
+					<h1 class = "style2">To view the github repository, just click on the project you wish to see.</h1>
+					<div class = "wrapper">
+						<div class="column2 box">
+							<a href="https://github.com/TylerDickard/personalWebsite" target = "_blank">
+								<img src="pictures/proj1.png">
+								<h1 class = "style3">My Personal Webpage</h1>
+								<p style = "font-size : 150%">This project was developed using HTML5, CSS, and some JavaScript. This project took about a week,
+								and it will help with making my resume an interactive experience. Also I used AWS to host this webpage.</p>
+							</a>
+						</div>
+						<div class = "column2 box">
+							<a href="https://github.com/TylerDickard/TicTacToe" target = "_blank">
+								<img src="pictures/proj2.png">
+								<h1 class = "style3">TicTacToe Game</h1>
+								<p style = "font-size : 150%">This project was developed using C#. This was a short project which explored
+								many different technologies in C#, like drawing.</p>
+							</a>
+						</div>
+						<div class = "column2 ">
+							
+						</div>
+					</div>
+				</section>
+				<section id = "contactme" class = "content">
+					<h1 class = "style1"> Contact Me</h1>
+					<form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+							<script type="text/javascript">
+								function ValidateForm(frm) {
+									if (frm.Name.value == "") { 
+										alert('Name is required.'); 
+										frm.Name.focus(); 
+										return false; 
+									}
+									if (frm.FromEmailAddress.value == "") { 
+										alert('Email address is required.'); 
+										frm.FromEmailAddress.focus(); 
+										return false; 
+									}
+									if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { 
+										alert('Please enter a valid email address.'); 
+										frm.FromEmailAddress.focus(); 
+										return false; 
+									}
+									if (frm.Comments.value == "") { 
+										alert('Please enter comments or questions.'); 
+										frm.Comments.focus(); 
+										return false; 
+									}
+									return true; 
+								}
+							</script>
+							<table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+							<tr> 
+								<td>
+									<label for="Name">Name*:</label>
+								</td> 
+								<td>
+									<input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" /> 
+								</td> 
+							</tr> 
+							<tr> 
+								<td>
+									<label for="FromEmailAddress">Email address*:</label>
+								</td> 
+								<td>
+									<input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+								</td>
+							</tr>
+							<tr> 
+								<td>
+									<label for="Comments">Comments*:</label>
+								</td>
+								<td>
+									<textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+								</td> 
+							</tr> 
+							<tr>
+								<td>
+									<p>* - required fields</p>
+								</td> 
+								<td>
+									<div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">Contact Form Developed by 100forms.com</a></div>
+									<input name="skip_Submit" type="submit" value="Submit" />
+									<script src="https://www.100forms.com/js/FORMKEY:UCBW2TCR6RXP/SEND:tylerdickard5@gmail.com" type="text/javascript"></script>
+								</td> 
+							</tr>
+						</table>
+					</form>
+					<h1 class="style1"> Social Media </h1>
+					<p style="font-size: 150%;">Linkedin: <a href="www.linkedin.com/in/tyler-dickard">here</a></p>
+					<p style="font-size: 150%;">GitHub: <a href="https://github.com/TylerDickard">here</a></p>
+				</section>
+			</body>
+		</div>
+	</div>
+	<footer>
+		<h5>Developed by Tyler Dickard, 2022</h5>
+		<h6>Last Updated : 5/5/2022</h6>
+	</footer>
+</html>

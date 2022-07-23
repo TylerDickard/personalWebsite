@@ -1,0 +1,156 @@
+/*Styling for the flexbox for the webpage*/
+.row {
+  display : flex;
+}
+.column {
+  flex : 100%;
+}
+.column2 {
+  flex : 20%;
+  margin : 2%
+}
+
+
+/*Styling for the navigation bar*/
+#navbar {
+  overflow-x: hidden;
+  background-color: #333;
+  position: fixed; 
+  top: 0; 
+  left : -1px;
+  width: 100%;
+  z-index: 4;
+}
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+@media screen and (min-width : 1000px) {
+  #navbar a:hover {
+    background-color: darkgray;
+  }
+}
+.content {
+  padding: 30px;
+}
+
+
+
+/*general styling*/
+header {
+  width: 100%;
+}
+html {
+  background-color: lightgrey;
+  font-family: "Monaco", "Monospace", "serif";
+  max-width: 99%;
+  scroll-behavior: smooth;
+}
+footer {
+  text-align: center;
+  width:  100%;
+  background-color: grey;
+  padding : 5px 5px;
+}
+section {
+  min-height: 100vh;
+}
+
+
+/*Styling for Img on home scren*/
+img#homeImg {
+    transition: transform .2s;
+    float: right; 
+    padding: 0px;
+    filter : drop-shadow(16px 16px 10px darkgray);
+    max-width: 75%;
+    max-height: 75%;
+}
+@media screen and (min-width:  1000px) {
+  img#homeImg:hover {
+    transform: scale(1.2);
+  }
+}
+
+
+/*Styling for unsorted lists*/
+section ul#mainList {
+  list-style-type: none; 
+  padding-left: 0px;
+}
+section ul li#bigBold {
+  font-size: 320%;
+  font-style: bold;
+}
+section ul li#big {
+  font-size: 320%;
+}
+section ul li#med {
+  font-size : 300%;
+}
+section ul li#smallItalic {
+  font-size:  260%;
+  font-style: italic;
+}
+section ul li#small {
+  font-size: 260%;
+}
+ul#basic {
+  list-style-type: square;
+}
+
+
+/* Styling for the project section */
+.wrapper {
+  display : grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:  50px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.box {
+  transition: transform .2s;
+  background-color: grey;
+  border-radius: 25px;
+  z-index: 0;
+  filter : drop-shadow(16px 16px 10px darkgray);
+  grid-auto-columns: auto ;
+  grid-row : 1;
+}
+@media screen and (min-width:  1000px) {
+  .box:hover {
+    transform: scale(1.2);
+  }
+}
+div.box img {
+    height: 25vh;
+    width : 100%; 
+    object-fit: contain; 
+    z-index: 1; 
+    display : block; 
+    border-radius : 25px;
+}
+
+/*Temp Styling for the design of the webpage*/
+h1.style1 {
+  font-size: 350%;
+}
+h1.style2 {
+  font-size: 320%;
+  margin-bottom: 0;
+}
+h1.style3 {
+  font-size : 200%;
+}
+section#home p {
+  font-size: 300%;
+  padding-top: 0;
+}
+div.column2 a {
+  text-decoration: none;
+  color : black;
+  
+}
