@@ -1,63 +1,21 @@
-/*Styling for the flexbox for the webpage*/
-.row {
-  display : flex;
-}
-.column {
-  flex : 100%;
-}
-.column2 {
-  flex : 20%;
-  margin : 2%
-}
-
-
-/*Styling for the navigation bar*/
-#navbar {
-  overflow-x: hidden;
-  background-color: #333;
-  position: fixed; 
-  top: 0; 
-  left : -1px;
-  width: 100%;
-  z-index: 4;
-}
-#navbar a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-@media screen and (min-width : 1000px) {
-  #navbar a:hover {
-    background-color: darkgray;
-  }
-}
-.content {
-  padding: 30px;
-}
-
-
-
 /*general styling*/
 header {
   width: 100%;
 }
 html {
-  background-color: lightgrey;
   font-family: "Monaco", "Monospace", "serif";
-  max-width: 99%;
   scroll-behavior: smooth;
 }
 footer {
   text-align: center;
   width:  100%;
-  background-color: grey;
+  background-color: whitesmoke;
   padding : 5px 5px;
 }
 section {
+  
   min-height: 100vh;
+  padding-top: 2.5%;
 }
 
 
