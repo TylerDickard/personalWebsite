@@ -61,37 +61,6 @@ ul#basic {
   list-style-type: square;
 }
 
-
-/* Styling for the project section */
-.wrapper {
-  display : grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap:  50px;
-  grid-auto-rows: minmax(100px, auto);
-}
-.box {
-  transition: transform .2s;
-  background-color: grey;
-  border-radius: 25px;
-  z-index: 0;
-  filter : drop-shadow(16px 16px 10px darkgray);
-  grid-auto-columns: auto ;
-  grid-row : 1;
-}
-@media screen and (min-width:  1000px) {
-  .box:hover {
-    transform: scale(1.2);
-  }
-}
-div.box img {
-    height: 25vh;
-    width : 100%; 
-    object-fit: contain; 
-    z-index: 1; 
-    display : block; 
-    border-radius : 25px;
-}
-
 /*Temp Styling for the design of the webpage*/
 h1.style1 {
   font-size: 350%;
@@ -110,5 +79,7 @@ section#home p {
 div.column2 a {
   text-decoration: none;
   color : black;
-  
+}
+div.card {
+  margin: 5px;
 }
