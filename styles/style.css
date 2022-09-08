@@ -83,3 +83,15 @@ div.column2 a {
 div.card {
   margin: 5px;
 }
+button.accordion-button {
+  margin-top: 3px;
+}
+#lightOrDark {
+  border : 0px;
+}
+
+#dateRange {
+  font-size: small;
+  font-style: italic;
+  padding-left: 3px;
+}
