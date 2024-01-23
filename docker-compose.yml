@@ -1,0 +1,47 @@
+version: '3.8'
+services:
+  client:
+    build: ./client
+    ports: 
+      - "80:4200"
+  server:
+    build: ./server
+    ports:
+      - "8090:8090"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/personalWebsiteDB
+    networks:
+      - mongo-database
+    links:
+      - mongo
+    depends_on:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    networks:
+      - mongo-database
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongodb-data:/data/db
+  mongo-express:
+    image: mongo-express:latest
+    container_name: mongogui
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongo
+      - ME_CONFIG_BASICAUTH_USERNAME=admin
+      - ME_CONFIG_BASICAUTH_PASSWORD=admin
+    ports:
+      - 8080:8081
+    networks:
+      - mongo-database
+    depends_on:
+      - mongo
+networks:
+  mongo-database:
+    driver: bridge
+    
+volumes:
+  mongodb-data:
+    name: mongodb-data

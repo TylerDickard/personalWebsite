@@ -17,4 +17,6 @@ app.use(function(req, res, next) {
 
 require('./routes')(app);
 
+console.log("attempting to connect to mongodb")
+mongoose.connect(config.mongo.uri, config.mongo.options).then(() => { console.log('MongoDB Connected')}).catch(err=> console.log(err))
 app.listen(config.port, () => console.log( `Test app listening on ${config.port}!`))

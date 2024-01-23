@@ -1,4 +1,4 @@
-FROM node:21
+FROM node:iron
 
 WORKDIR /usr/src/app
 
@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 4200
 
-CMD ["npm", "start"]
+CMD [ "npm", "start" ]
